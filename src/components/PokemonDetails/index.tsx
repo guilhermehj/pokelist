@@ -1,16 +1,17 @@
 import React from 'react';
-
 import { Text, useWindowDimensions, View } from 'react-native';
 import { SharedElement } from 'react-navigation-shared-element';
+
 import { lighten } from 'polished';
-import { Container, PokemonName, PokemonNumber } from './styles';
-import { Pokemon } from '../../types/pokemon';
+
+import typesColorsMap from '../../constants/typesColorsMap';
 import normalizeSize from '../../helpers/normalizeSize';
+import { Pokemon } from '../../types/pokemon';
 import { PokemonImage } from '../PokemonCard/styles';
 import FireType from '../PokemonTypes/Fire';
-import typesColorsMap from '../../constants/typesColorsMap';
 import typesBgMap from '../PokemonTypes/map';
 import PokemonStat from './Stat';
+import { Container, PokemonName, PokemonNumber } from './styles';
 
 interface Props {
   pokemon: Pokemon;
@@ -22,9 +23,6 @@ const PokemonDetails: React.FC<Props> = ({ pokemon }) => {
   const typeColor = lighten(0.1, typesColorsMap[type] || typesColorsMap.normal);
 
   const PokemonTypeBg = typesBgMap[type];
-
-  console.log(Object.keys(pokemon));
-  console.log(pokemon.stats);
 
   return (
     <View style={{ flex: 1 }}>

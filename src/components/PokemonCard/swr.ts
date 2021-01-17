@@ -1,4 +1,5 @@
 import useSWR from 'swr';
+
 import { getPokemonByName } from '../../services/pokemon';
 
 export const usePokemonSWR = (name: string) => {

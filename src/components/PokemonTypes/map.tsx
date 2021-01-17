@@ -1,23 +1,24 @@
 import React from 'react';
-import { Props } from './types';
-import Fire from './Fire';
-import Water from './Water';
-import Normal from './Normal';
-import Electric from './Electric';
-import Grass from './Grass';
-import Ice from './Ice';
-import Fighting from './Fighting';
-import Poison from './Poison';
-import Ground from './Ground';
-import Flying from './Flying';
-import Psychic from './Psychic';
+
 import Bug from './Bug';
-import Rock from './Rock';
-import Ghost from './Ghost';
-import Dragon from './Dragon';
 import Dark from './Dark';
-import Steel from './Steel';
+import Dragon from './Dragon';
+import Electric from './Electric';
 import Fairy from './Fairy';
+import Fighting from './Fighting';
+import Fire from './Fire';
+import Flying from './Flying';
+import Ghost from './Ghost';
+import Grass from './Grass';
+import Ground from './Ground';
+import Ice from './Ice';
+import Normal from './Normal';
+import Poison from './Poison';
+import Psychic from './Psychic';
+import Rock from './Rock';
+import Steel from './Steel';
+import { Props } from './types';
+import Water from './Water';
 
 export interface TypesBgMap {
   normal: React.FC<Props>;

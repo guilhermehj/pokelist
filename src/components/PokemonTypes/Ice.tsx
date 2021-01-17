@@ -1,5 +1,6 @@
 import React from 'react';
 import Svg, { Path } from 'react-native-svg';
+
 import { Props } from './types';
 
 const IceType: React.FC<Props> = ({ color, size }) => {

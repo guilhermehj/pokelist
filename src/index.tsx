@@ -1,11 +1,14 @@
 import React from 'react';
-import { AppLoading } from 'expo';
+
 import {
   useFonts,
   Exo2_700Bold,
   Exo2_400Regular,
 } from '@expo-google-fonts/dev';
 import { NavigationContainer } from '@react-navigation/native';
+
+import { AppLoading } from 'expo';
+
 import RootStack from './routes';
 
 const App = () => {

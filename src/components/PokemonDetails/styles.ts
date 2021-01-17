@@ -1,7 +1,8 @@
-import styled from 'styled-components/native';
 import { darken, lighten } from 'polished';
-import normalizeSize from '../../helpers/normalizeSize';
+import styled from 'styled-components/native';
+
 import typesColorsMap, { TypesColorsMap } from '../../constants/typesColorsMap';
+import normalizeSize from '../../helpers/normalizeSize';
 
 export const Container = styled.ScrollView`
   flex: 1;

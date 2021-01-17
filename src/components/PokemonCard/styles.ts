@@ -1,12 +1,12 @@
-import styled from 'styled-components/native';
-import Animated from 'react-native-reanimated';
-import { darken, lighten } from 'polished';
 import { Pressable, PressableProps, TextProps } from 'react-native';
 import { Image } from 'react-native-expo-image-cache';
-import { Exo2_700Bold } from '@expo-google-fonts/dev';
+import Animated from 'react-native-reanimated';
 
-import normalizeSize from '../../helpers/normalizeSize';
+import { darken, lighten } from 'polished';
+import styled from 'styled-components/native';
+
 import typesColorsMap, { TypesColorsMap } from '../../constants/typesColorsMap';
+import normalizeSize from '../../helpers/normalizeSize';
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 

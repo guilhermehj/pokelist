@@ -5,14 +5,16 @@ import {
   StatusBar,
   Pressable,
 } from 'react-native';
+
 import { AntDesign } from '@expo/vector-icons';
-import { LinearGradient } from 'expo-linear-gradient';
-import { darken, lighten } from 'polished';
 import { StackScreenProps } from '@react-navigation/stack';
 
-import { RootStackParamList } from '../../routes';
-import typesColorsMap from '../../constants/typesColorsMap';
+import { LinearGradient } from 'expo-linear-gradient';
+import { darken, lighten } from 'polished';
+
 import PokemonDetails from '../../components/PokemonDetails';
+import typesColorsMap from '../../constants/typesColorsMap';
+import { RootStackParamList } from '../../routes';
 
 type Props = StackScreenProps<RootStackParamList, 'PokemonDetails'>;
 

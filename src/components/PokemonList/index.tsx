@@ -1,20 +1,18 @@
-import React, { useCallback, useState } from 'react';
-import { Text } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import React, { useCallback } from 'react';
+
+import LoadingMore from '../../animations/ListLoadingMore';
+import LoadingAnimation from '../../animations/Loading';
+import { PokemonItemResponse } from '../../types/pokemon';
 import PokemonItem from '../PokemonCard';
 import { Container, Title } from './styles';
 import { usePokemonsSWR } from './swr';
-import { PokemonItemResponse } from '../../types/pokemon';
-import LoadingAnimation from '../../animations/Loading';
-import LoadingMore from '../../animations/ListLoadingMore';
 
 const PokemonList = () => {
-  const {
- results, page, setPage, loading
-} = usePokemonsSWR();
+  const { results, page, setPage, loading } = usePokemonsSWR();
 
-  const isLoadingMore = loading(
-  (page > 0 && results && typeof results[page - 1] === 'undefined');
+  const isLoadingMore =
+    loading ||
+    (page > 0 && results && typeof results[page - 1] === 'undefined');
 
   const renderItem = useCallback(
     ({ item, index }: { item: PokemonItemResponse; index: number }) => (
@@ -25,7 +23,7 @@ const PokemonList = () => {
         index={index}
       />
     ),
-    [],
+    []
   );
 
   const renderFooter = useCallback(() => {
@@ -39,7 +37,7 @@ const PokemonList = () => {
 
   const keyExtractor = useCallback(
     (item: PokemonItemResponse) => item.name,
-    [],
+    []
   );
 
   const onEndReached = useCallback(() => {

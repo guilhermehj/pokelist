@@ -1,12 +1,12 @@
-import { useWindowDimensions, View } from 'react-native';
-import Svg, { Circle, Ellipse, G, Path } from 'react-native-svg';
 import React from 'react';
-import { loop } from 'react-native-redash';
+import { useWindowDimensions, View } from 'react-native';
 import Animated, {
   concat,
   interpolate,
   Extrapolate,
 } from 'react-native-reanimated';
+import { loop } from 'react-native-redash';
+import Svg, { Circle, Ellipse, G, Path } from 'react-native-svg';
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 const AnimatedG = Animated.createAnimatedComponent(G);

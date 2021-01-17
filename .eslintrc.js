@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:prettier/recommended', 'airbnb-base'],
+  extends: ['plugin:prettier/recommended'],
 
   plugins: ['prettier', 'eslint-plugin-import-helpers'],
   parser: '@typescript-eslint/parser',
@@ -9,9 +9,8 @@ module.exports = {
     'import-helpers/order-imports': [
       'warn',
       {
-        // example configuration
         newlinesBetween: 'always',
-        groups: ['react^', 'module', ['parent', 'sibling', 'index']],
+        groups: ['/^react/', '/^@/', 'module', ['parent', 'sibling', 'index']],
         alphabetize: { order: 'asc', ignoreCase: true },
       },
     ],

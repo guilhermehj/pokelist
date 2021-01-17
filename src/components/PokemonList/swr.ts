@@ -1,4 +1,5 @@
 import useSWR, { useSWRInfinite } from 'swr';
+
 import { getPokemonByName, getPokemons } from '../../services/pokemon';
 import { PokemonItemResponse, PokemonsResponse } from '../../types/pokemon';
 

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-
-import { Circle, Line, Svg } from 'react-native-svg';
 import Animated, { Extrapolate, interpolate } from 'react-native-reanimated';
 import { useTransition } from 'react-native-redash';
+import { Circle, Line, Svg } from 'react-native-svg';
 
 const AnimatedLine = Animated.createAnimatedComponent(Line);
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);

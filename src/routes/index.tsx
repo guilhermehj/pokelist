@@ -1,9 +1,10 @@
 import React from 'react';
 import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
-import PokeListScreen from '../screens/PokeListScreen';
-import { Pokemon } from '../types/pokemon';
-import PokemonDetailsScreen from '../screens/PokemonDetails';
+
 import LoadingScreen from '../screens/LoadingScreen';
+import PokeListScreen from '../screens/PokeListScreen';
+import PokemonDetailsScreen from '../screens/PokemonDetails';
+import { Pokemon } from '../types/pokemon';
 
 export type RootStackParamList = {
   PokeList: undefined;

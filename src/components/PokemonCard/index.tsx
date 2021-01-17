@@ -1,8 +1,9 @@
 import React, { useCallback } from 'react';
-import { useNavigation } from '@react-navigation/native';
 import { interpolate } from 'react-native-reanimated';
 import { useValue, withTransition } from 'react-native-redash';
 import { SharedElement } from 'react-navigation-shared-element';
+
+import { useNavigation } from '@react-navigation/native';
 
 import normalizeSize from '../../helpers/normalizeSize';
 import { Pokemon } from '../../types/pokemon';

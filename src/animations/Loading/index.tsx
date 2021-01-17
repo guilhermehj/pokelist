@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-import Svg, { Circle, G, Path } from 'react-native-svg';
+import { useWindowDimensions } from 'react-native';
 import Animated, {
   call,
   concat,
@@ -12,9 +11,10 @@ import Animated, {
   set,
   useCode,
 } from 'react-native-reanimated';
-import { useNavigation } from '@react-navigation/native';
 import { interpolateColor, loop, timing, useValue } from 'react-native-redash';
-import { useWindowDimensions } from 'react-native';
+import Svg, { Circle, G, Path } from 'react-native-svg';
+
+import { useNavigation } from '@react-navigation/native';
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 const AnimatedG = Animated.createAnimatedComponent(G);

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import LoadingAnimation from '../../animations/Loading';
 import { usePokemonsSWR } from '../../components/PokemonList/swr';
 

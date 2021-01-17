@@ -1,6 +1,6 @@
 import React from 'react';
-import { Stat } from '../../types/pokemon';
 
+import { Stat } from '../../types/pokemon';
 import {
   StatContainer,
   StatLabel,
